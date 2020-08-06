@@ -27,9 +27,9 @@
         </div>
     </div>
 
-    <div th:fragment="job-list" class="table table-striped">
+    <div th:fragment="job-list" class="table">
 
-        <table th:each="job : ${job-list}" class="table table-striped">
+        <table th:each="job : ${jobs}" class="table">
             <tr>
                 <th>ID</th>
                 <td th:text="${job.id}"></td>
